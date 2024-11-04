@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>historial de compras</title>
+    <link rel="stylesheet" href="..//CSS/styles.css"><link rel="stylesheet" href="..//CSS/mode.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <a href="/index.html"> <img src="..//Media/img/barber logo.jpg" alt="logo" id="logoI"> </a>
+        <button class="hamburger" id="hamburger-btn">&#9776;</button>
+        <nav id="navbar">
+            <a href="/index.html">Inicio</a>
+            <a href="../HTML/login.html" id="login-link">Iniciar Sesión </a>
+            <a href="../HTML/register.html" id="register-link">Registrase </a>
+            <a href="..//HTML/about.html" id="acercade-link">AcercaDe</a>
+            <a href="..//HTML/contact.html" id="contactos-link">Contactos</a>
+            <a href="..//HTML/location.html" id="ubicacion-link">Ubicación</a>
+            <a href="..//HTML/historial.HTML" id="historial-link" style="display:none;">Ver compras</a>
+            <a href="..//HTML/admin.html" id="productos-link" style="display: none;">Productos</a>
+            <span id="welcome-message" style="display:none;"></span>
+            <a href="#" id="logout-link" style="display:none;">Cerrar Sesión</a>
+            <button id="cart-btn">Carrito (0)</button>
+        </nav>
+        </header>
+    
+        <h1>Historial de compras</h1>
+        <section id="compras-list">
+            <!--Aquí se mostraran las compras realizadas-->
+        </section>
+    </main>
+   <!-- Pie de Página -->
+   <footer>
+    <span>@Supermercado 2024 - Todos los derechos reservados</span>
+    <div class="footerdiv">
+        <div class="footerdiv1">
+            <img src="..//Media/img/barber image 3.jpg" style="border-radius: 5px; width: 200px; height: 150px;" alt="Logo">
+        </div>
+        <div class="footerdiv2">
+            <h3 class="headline footer">Servicio al cliente</h3>
+            <ul class="footer-links">
+                <li><a href="#">Métodos de pago</a></li>
+                <li><a href="#">Entregas y devoluciones</a></li>
+                <li><a href="#">Políticas de cookies</a></li>
+                <li><a href="#">Políticas de privacidad</a></li>
+                <li><a href="#">Términos y condiciones</a></li>
+            </ul>
+        </div>
+        <div class="footerdiv2">
+            <h2 class="headline">Contáctenos</h2>
+            <ul>
+                <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:3437-8978">3437-8978</a></li>
+                <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:super@super.com">barber@gmail.com</a></li>
+                <li><a href="../HTML/contactos.html"><i class="fa fa-comment" aria-hidden="true"></i>Contáctenos</a></li>
+                <li><a href="../HTML/preguntas.html"><i class="fa fa-question-circle" aria-hidden="true"></i>Preguntas frecuentes</a></li>
+                <li><a href="../HTML/ubicacion.html"><i class="fa fa-store" aria-hidden="true"></i>Supermercados</a></li>
+                <li><a href="../HTML/acercade.html"><i class="fa fa-building" aria-hidden="true"></i>¿Quiénes somos?</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="..//JS/compras.js"></script>
+    <script src="..//JS/script.js"></script>     <script src="..//JS/mode.js"></script>
+</body>
+</html>

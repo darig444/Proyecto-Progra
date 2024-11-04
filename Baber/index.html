@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="..//CSS/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <header>
+    <a href="../HTML/index.html"> <img src="..//Media/img/barber logo.jpg" alt="logo" id="logoI"> </a>
+    <button class="hamburger" id="hamburger-btn">&#9776;</button>
+    <nav id="navbar">
+            <a href="..//HTML/index.html">Inicio</a>
+            <a href="..//HTML/about.html" id="acercade-link">AcercaDe</a>
+            <a href="..//HTML/contact.html" id="contactos-link">Contactos</a>
+            <a href="..//HTML/location.html" id="ubicacion-link">Ubicación</a>
+            <a href="..//HTML/historial.HTML" id="historial-link" style="display:none;">Ver compras</a>
+            <a href="..//HTML/admin.html" id="productos-link" style="display: none;">Productos</a>
+            <a href="..//HTML/login.html" id="login-link">Iniciar sesión</a>
+            <a href="..//HTML/register.html" id="register-link">Registarse</a>
+            <span id="welcome-message" style="display:none;"></span>
+            <a href="#" id="logout-link" style="display:none;">Cerrar Sesión</a>
+            <button id="cart-btn">Carrito (0)</button>
+    </nav>
+    </header>
+    <main>
+      <section id="product-list" class="product-grid">
+        <!--Aquí se muestra la lista de productos-->
+      </section>
+      <!--Sección para mostrar el contenido del carrito-->
+      <div id="cart" style="display: none;">
+        <h2>Carrito de compras</h2>
+        <ul id="cart-items"></ul>
+        <p>Subtotal: ₡ <span id="cart-subtotal"0.00></span> </p>
+        <p>IVA(13%): ₡ <span id="cart-tax"0.00></span> </p>
+        <p>Total: ₡ <span id="cart-total"0.00></span> </p>
+        <button id="checkout-btn">Finalizar compra</button>
+      </div>
+    </main>
+
+    <footer>
+      <span>BarberShop  2024- Todos los derechos reservados</span>
+      <div class="footerdiv">
+          <div class="footerdiv1">
+              <img src="..//Media/img/barber image 2.jpg" style="border-radius: 5px;width: 250px;height: 150px;" alt="logo">
+          </div>
+          <div class="footerdiv2">
+              <h3 class="headline footer">Servicio al Cliente</h3>
+              <ul class="footer-links">
+                  <li><a href="">Metodos de pago</a></li>
+                  <li><a href="">Entregas y devoluciones</a></li>
+                  <li><a href="">Políticas de Cookies</a></li>
+                  <li><a href="">Políticas de privacidad</a></li>
+                  <li><a href="">Términos y condiciones</a></li>
+                  <li><a href="">Reclamaciones</a></li>
+              </ul>
+              <div class="footerdiv2">
+                  <h3 class="headline footer">Contáctenos</h3>
+                  <ul>
+                      <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:4455-3214" class="ng-binding">4455-3214</a></li>
+                      <li><i class="fa fa-envelope" aria-hidden="true"></i>
+                      <a class="ng-binding" href="mailto:cudlecuts@gmail.com">cuddlecuts@gmail.com</a>
+                  </li>
+                  <li><a href="..//HTML/contact.html"><i class="fa fa-comment" aria-hidden="true"></i>Contáctenos</a></li>
+                  <li><a href="..//HTML/preguntas.html"><i class="fa fa-question-circle" aria-hidden="true"></i>Preguntas frecuentes</a></li>
+                  <li><a href="..//HTML/location.html"><i class="fa fa-store" aria-hidden="true"></i>Supermercados</a></li>
+                  <li><a href="..//HTML/acercade.html"><i class="fa fa-building" aria-hidden="true"></i>Quiénes somos?</a></li>
+                  </ul>
+              </div>
+          </div> 
+      
+    
+  </footer>
+  
+      
+      <script src="..//JS/script.js"></script>
+      <script src="..//JS/carrito.js"></script>
+      
+
+
+</body>
+</html>
