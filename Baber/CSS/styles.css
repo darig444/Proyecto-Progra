@@ -1,0 +1,393 @@
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    }
+    header {
+    background-color: #1747c9;
+    color: white;
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+   h1{
+    color: white;
+   }
+    }
+    #logoI{
+        width:80px;
+        height: 80px;
+        border-radius: 50%;
+    }
+
+    nav {
+        align-items: center;
+        display: flex;
+        gap: 10px;
+    }
+
+
+    #i{
+        align-items: center;
+    }
+    #mod{
+        align-items: center;
+        background-color: #706fbe;;
+    }
+    select{
+    
+        border-radius:  20px;
+    }
+    nav a, #welcome-message {
+        padding: 10px 20px;
+        color: #f5f5f5;
+        text-decoration: none;
+    }
+    nav a:hover{
+        background-color: #706fbe;
+        color: #f5f5f5;
+    }
+
+    #welcome-message {
+        font-weight: bold;
+        color: #ffffff;
+        display: inline-block;
+    }
+
+
+    h1 {
+        margin: 30px 0;
+    }
+
+    main {
+        flex: 1;
+        padding: 20px;
+    }
+    
+    form {
+        margin-bottom: 20px;
+    }
+
+    input {
+        display: block;
+        margin: 10px 0;
+        padding: 8px;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    button {
+        padding: 10px 20px;
+        background-color: #6fbea0;;
+        color: aliceblue;
+        border: none;
+        cursor: pointer;
+    }
+
+    button:hover{
+        background-color:  #6f84be;
+    }
+    .product-grid{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+        padding: 20px;
+    }
+
+    .product-card {
+        background-color: aliceblue;
+        border-radius: 8px;
+        padding: 15px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(165, 164, 164, 0.993);
+    }
+    
+    .product-card img {
+        width: 100%;
+        height: 50%;
+        border-radius: 8px;
+    }
+
+    .product-card h3{
+        font-size: 18px;
+        margin: 10px 0;
+    }
+    .product-card p {
+        font-size: 14px;
+        margin: 5px 0;
+
+    }
+    .product-card .sold-out{
+        color: red;
+        font-weight: bold;
+    }
+
+    #logout-link{
+        color: #ffffff;
+        cursor: pointer;
+    }
+    #welcome-message {
+        margin-right: 10px;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+    }
+    .compra {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin: 10px 0;
+    }
+    .compra h3{
+        margin: 0 0 10px;
+    }
+
+    .compra ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .compra ul li{
+        padding: 10px 0;
+    }
+    .compra p{
+        font-weight: bold;
+    }
+
+    footer{
+        background-color: #1747c9;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid #ddd;
+        padding-top: 20px;
+    }
+
+    .footerdiv{
+        padding: 20px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .footerdiv1{
+        padding-top: 20px;
+    }
+    .footerdiv2 {
+        color: white;
+        text-align: center;
+    }
+    .footerdiv3 {
+        color: white;
+        text-align: left;
+    }
+    footer a{
+        text-decoration: none;
+        color: rgb(234, 229, 299);
+    }
+    
+/*Hamburguesa*/
+
+.hamburger{
+    display: none;
+    background-color:#1747c9;
+    color: #ffffff;
+    font-size: 30px;
+    border: none;
+    cursor: pointer; 
+}
+
+
+@media  screen and (max-width:768px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    header, footer {
+        text-align: center;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        background-color: black;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+    }
+    nav a{
+        padding: 15px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+    }
+    .hamburger {
+        display: block;
+    }
+    nav.active {
+        display: flex;
+    }
+    .hamburger.active {
+        content: "\2715";
+    }
+    .footerdiv {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footerdiv1, .footerdiv2 {
+        text-align: center;
+
+    }
+    .footerdiv2 ul {
+        padding-left: 0;
+    }
+    .footerdiv2 ul li {
+        list-style-type: none ;
+    }
+}
+
+@media  screen and (max-width: 480px) {
+    .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 10px;
+    }
+    button, input {
+        width: 100%;
+    }
+    .hamburger.active {
+        content: "\2715";
+    }
+} 
+
+/* Carrusel */
+/* Contenedor del carrusel */
+.carousel-container {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 500%;
+  }
+  
+  .carousel-item {
+    min-width: 20%;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: 700px;
+    border-radius: 10px;
+    
+  }
+  
+  /* Controles de navegación */
+  .carousel-prev, .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Tamaño inicial */
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+    font-size: 24px;
+  }
+  
+  .carousel-prev {
+    left: 10px;
+  }
+  
+  .carousel-next {
+    right: 10px;
+  }
+  /* Tema oscuro */
+.theme-dark {
+    --background-color: #181818;
+    --text-color: #f1f1f1;
+    --header-background-color: #0a0a0a;
+    --footer-background-color: #0a0a0a;
+    --card-background-color: #252525;
+    --btn-button-color: #380a10dc;
+  }
+  
+  /* Paleta 1 */
+  .theme-palette1 {
+    --background-color: #1a1b41;
+    --text-color: #e4e5f1;
+    --header-background-color: #3a3f73;
+    --footer-background-color: #3a3f73;
+    --card-background-color: #3a3f73;
+  }
+  
+  /* Paleta 2 */
+  .theme-palette2 {
+    --background-color: #f0f5f9;
+    --text-color: #333d51;
+    --header-background-color: #6272a4;
+    --footer-background-color: #6272a4;
+    --card-background-color: #8b9ab0;
+  }
+  
+  /* Paleta 3 */
+  .theme-palette3 {
+    --background-color: #ffefd5;
+    --text-color: #4b3832;
+    --header-background-color: #a3423c;
+    --footer-background-color: #a3423c;
+    --card-background-color: #d9b08c;
+  }
+  
+  /* Paleta 4 */
+  .theme-palette4 {
+    --background-color: #1e212d;
+    --text-color: #ffffff;
+    --header-background-color: #3f72af;
+    --footer-background-color: #3f72af;
+    --card-background-color: #112d4e;
+  }
+  
+  .theme-paletteChristmas {
+    --background-color: #1b2a32; /* Verde oscuro de fondo */
+    --text-color: #ffffff; /* Blanco para el texto */
+    --header-background-color: #b22222; /* Rojo oscuro para el header */
+    --footer-background-color: #b22222; /* Rojo oscuro para el footer */
+    --card-background-color: #3c763d; /* Verde intenso para las tarjetas */
+    --accent-color: #e8e9eb; /* Color de acento en blanco hielo */
+  }
+  
+  .theme-paletteHallo2 {
+    --background-color: #2d132c; /* Morado oscuro para el fondo */
+    --text-color: #f8f9fa; /* Blanco para el texto */
+    --header-background-color: #ff7518; /* Naranja para el header */
+    --footer-background-color: #ff7518; /* Naranja para el footer */
+    --card-background-color: #4b0082; /* Índigo oscuro para las tarjetas */
+    --accent-color: #ffff99; /* Amarillo claro para el acento */
+  }
+  
+  .theme-paletteIndependencia {
+    --background-color: #002b7f; /* Azul oscuro para el fondo */
+    --text-color: #010101; /* Blanco para el texto */
+    --header-background-color: #ce1126; /* Rojo para el header */
+    --footer-background-color: #ce1126; /* Rojo para el footer */
+    --card-background-color: #ffffff; /* Blanco para las tarjetas */
+    --accent-color: #002b7f; /* Azul oscuro como acento */
+  }
+  
+  
+  
